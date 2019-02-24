@@ -69,7 +69,6 @@ function printQuote() {
     outputQuote = '<p class="quote">' + randomQuote.quote + "</p>";
     outputSource = '<p class="source">' + randomQuote.source + "</p>";
     output = outputQuote + " " + outputSource;
-    document.querySelector("#quote-box").innerHTML = output;
   } else {
     outputQuote = '<p class="quote">' + randomQuote.quote + "</p>";
     outputSource =
@@ -82,8 +81,8 @@ function printQuote() {
       randomQuote.year +
       "</span></p>";
     output = outputQuote + " " + outputSource;
-    document.querySelector("#quote-box").innerHTML = output;
   }
+  document.querySelector("#quote-box").innerHTML = output;
 }
 
 /***
